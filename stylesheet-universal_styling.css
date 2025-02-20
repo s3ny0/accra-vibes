@@ -1,0 +1,90 @@
+/*fonts*/
+@font-face {font-family: "Capsuula"; src: url(fonts/Capsuula.ttf);} /*paragraph font*/
+@font-face {font-family: "BearPaw"; src: url(fonts/BEARPAW_.ttf);} /*paragraph heading font*/
+@font-face {font-family: "Archistico"; src: url(fonts/Archistico_Bold.ttf);} /*bold font*/
+
+
+body{margin: 0px;}
+*{cursor: url("cursors/location-arrow.png"), auto; scroll-behavior: smooth;}
+h2{font-family: "BearPaw";}
+h1{font-family: "Archistico";}
+p{font-family: "Capsuula"; font-size: 1.3rem;}
+.intro-feature h2, .contributors h2{font-family: "Capsuula";}
+img{object-fit: cover;}
+
+nav{
+    background-color: #ffffff;
+    z-index: 20;
+}
+.drop-down-button:hover{cursor: url("cursors/cursor-finger.png"), auto;}
+
+.drop-down-menu{
+    background-color: #b41414;
+    z-index: 20;
+    display: none;
+}
+.drop-down-menu h1:hover{
+    color: white;
+}
+.design-element{
+    border-top: 1px solid black;
+}
+
+.landing{
+    background-image: url('images/sanbox_via_x.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+#page-title{
+    margin: 0px;
+    color: #153a58;
+    text-align: center;
+}
+.arrow-button{
+    border: none;
+    border-radius: 50%;
+}
+
+
+.intro{
+    display: flex;
+    background-color: #b41414;
+}
+.intro-feature{
+    display: flex;
+    color: white;
+}
+.intro .intro-feature h1{color: #800c0c;}
+.cta{display: flex; align-items: center; justify-content: space-between;}
+.intro-text h2{color: #800c0c;}
+.intro-image{
+    background-image: url("images/sandbox_via_x.jpg");
+    background-attachment: local;
+    background-size: cover;
+    background-position: center;
+}
+
+.history, .about-section{background-color: #BEBDB8;}
+.history-main h2, .contributors h2, .emphasis{color: #525252;}
+
+.explore-intro{
+    background-image: url("images/cocktail_via_medium.webp");
+    background-attachment: local;
+    background-size: cover;
+    background-position: center;
+}
+.explore-intro .intro-feature h1{color: #F9C700;}
+.explore-section{background-color: #ffd900;}
+.explore-section h2{color: #a08000;}
+
+
+.breaker-image{
+    background-image: url("images/nana-kwandoh-unsplash.jpg");
+    background-attachment: local;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-intro{background-color: #37812E;}
+.about-intro .intro-feature h1{color: #1b3d17;}

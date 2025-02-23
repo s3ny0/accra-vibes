@@ -32,12 +32,217 @@ body{
         color: white;
     }
 
+    .intro{display: flex; align-items: center;}
     .intro-feature h2, .contributors h2{font-size: 5rem; margin: 20px 0px 0px;}
     .number{font-size: 25rem;}
     .intro-text h2, .history-main h2, .explore-section-description h2, .emphasis{font-size: 10rem; margin: 0px;}
+
+    .history-main{overflow: hidden;}
+
+    .explore-intro .intro-feature h2{color: black;}
 }
 
-@media screen and (min-width: 700px) and (max-height: 1000px) {
+@media screen and (min-width: 700px) and (max-height: 800px) {
+    .wrapper{
+        height: 100vh;
+        width: 100vw;
+        display: flex;   
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+    }
+
+    .wrapper > * {
+        /*scroll-snap-align: start; /* Ensure each section snaps into view */
+        flex-shrink: 0; /* Prevent shrinking of child elements */
+    }
+
+    nav{
+        height: 95vh; width: 70px;
+        position: fixed; left: 20px; top: 50%; transform: translateY(-50%);
+        display: flex; flex-direction: column; align-items: center;
+    }
+
+    nav div{
+        display: flex; flex-direction: column; align-items: center; justify-content: center;
+    }
+
+    nav .drop-down-button{
+        height: 10%; width: 100%;
+        border-bottom: 1px solid black;
+        font-size: 2rem;
+    }
+
+    nav .title{
+        height: 90%; width: 100%;
+    }
+    .title-alt-1{display: none;}
+    .title-alt-2{text-align: center;}
+
+    /*drop down menu*/
+    .drop-down-menu{
+        height: 95%; width: 75vw;
+        position: fixed; left: 100px; top: 50%; transform: translateY(-50%);
+        padding: 0px 50px;
+    }
+    .drop-down-header{
+        height: 10%; width: 100%;
+        margin-bottom: 50px;
+        border-bottom: 1px solid black;
+    }
+    .drop-down-menu h1{
+        margin: 0px;
+        font-size: 5rem;
+    }
+    .drop-down-menu h1:hover{
+        cursor: url("cursors/cursor-finger.png"), auto;
+        transition: 0.5s ease;
+        border-left: 30px solid #800c0c;
+        padding-left: 20px;
+    }
+    .design-element{position: relative; top: 150px;}
+    .design-element img{
+        height: 60px; width: 60px;
+    }
+
+    /*landing section: consists of the landing container, page title, blurb, and arrow button*/
+    .landing{height: 100vh; width: 100vw;}
+    .landing-container{
+        height: 90vh; width: 80vw;
+        left: 120px;
+    }
+    #page-title{margin: -50px 0px;}
+    .arrow-button{
+        height: 50px; width: 50px;
+        background-color: #153a58;
+        color: white; font-size: 2rem;
+    }
+
+    /*intro section: contains intro feature and intro text*/
+    .intro{
+        height: 100vh;
+        z-index: 10;
+    }
+    .intro-feature{
+        height: 90%; width: 350px;
+        flex-direction: column; align-items: center; justify-content: space-between;
+        padding: 0px 20px;
+        border-right: 1px solid white;
+    }
+    .number{
+        width: 100%;
+        margin: 0px;
+        text-align: center;
+    }
+
+    .intro-text{
+        height: 90%; width: 500px;
+        display: flex; flex-direction: column; justify-content: space-between;
+        padding: 0px 50px;
+    }
+    .intro-alt-1{display: none;}
+    .intro-text img{height: 150px; width: 300px;}
+
+    .intro-image{height: 100%; width: 500px;}
+    .intro-image .blurb{
+        position: relative;
+        top: 85%;
+    }
+
+    /*history section*/
+    .history{
+        height: 100%;
+        display: flex; align-items: center;
+        z-index: 10;
+    }
+    .history-main{
+        height: 90%;
+        display: flex; flex-direction: column; justify-content: space-between;
+        padding: 0px 50px;
+    }
+    .history-main .paragraphs{
+        height: 70%;
+        display: flex;
+    }
+    .history-main .paragraphs p{
+        width: 950px;
+        margin: 0px 10px;
+    }
+
+    .history-image-feature{
+        height: 90%;
+        display: flex; flex-direction: column; align-items: center; justify-content: space-between;
+    }
+    .history-image-feature img{height: 31.5%; width: 300px;}
+
+    .history-conclusion{
+        height: 90%; width: 700px;
+        padding: 0px 50px;
+    }
+
+    /*explore section contains: explore image, and explore description*/
+    .explore-intro{
+        height: 100vh; width: 800px;
+        display: flex; align-items: center;}
+    .explore-intro .blurb{
+        height: 50px; width: 300px;
+        position: relative;
+        top: 40%; left: 100px;
+    }
+    .explore-section{
+        height: 100%;
+        display: flex; align-items: center;
+        padding: 0px 50px;
+        z-index: 10;
+    }
+    .explore-section-image{height: 90%; width: 400px;}
+    .explore-section-description{
+        height: 90%; width: 800px;
+        display: flex; flex-direction: column; justify-content: space-between;
+        padding: 0px 50px;
+    }
+    .explore-section-description img{height: 40vh; width: 600px;}
+    .explore-section-description h2{
+        margin: 0px;
+    }
+
+    /*breaker image*/
+    .breaker-image{height: 100%; width: 700px;}
+
+    /*about section*/
+    .about-intro{
+        height: 100%;
+        display: flex; align-items: center;
+        padding: 0px 50px;
+    }
+    .about-intro .intro-feature{border: none;}
+    .about-section{
+        height: 100vh;
+        padding: 0px 0px 0px 50px;
+        display: flex; flex-direction: column; justify-content: space-between;
+    }
+    .about-info{
+        height: 60vh;
+        display: flex;
+    }
+    .about-paragraph{width: 900px;}
+    .about-paragraph img{height: 150px; width: 350px;}
+    .contributors{
+        height: 100vh;
+        margin: 0px 50px;
+        padding: 0px 50px;
+    }
+    .contributors h2{margin: 10px 0px;}
+    .contributor{
+        height: 250px; width: 200px;
+        display: flex; justify-content: space-between;
+    }
+    .contributor img{height: 100px; width: 100px;}
+    .emphasis{width: 1500px;}
+}
+
+@media screen and (min-width: 700px) and (min-height: 801px) and (max-height: 1000px) {
     .wrapper{
         height: 100vh;
         width: 100vw;
@@ -131,16 +336,13 @@ body{
         margin: 0px;
         text-align: center;
     }
-    .cta{
-        height: 15%; width: 100px;
-    }
-    .cta i{font-size: 2rem;}
-
+    
     .intro-text{
         height: 100%; width: 550px;
         display: flex; flex-direction: column; justify-content: space-between;
         padding: 0px 50px;
     }
+    .intro-alt-2{display: none;}
     .intro-text img{height: 150px; width: 300px;}
 
     .intro-image{height: 100%; width: 500px;}

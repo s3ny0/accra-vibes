@@ -8,11 +8,11 @@ window.addEventListener("DOMContentLoaded", function () {
         let increment;
         
         if (window.innerWidth >= 1100) {
-            increment = 0.6;
+            increment = 0.5;
         } else if (window.innerWidth >= 700) {
             increment = 0.5;
         } else {
-            increment = 1.5;
+            increment = 1.4;
         }
 
         let newFontSize = baseFontSize + Math.floor((window.innerWidth - baseWidth) / 100) * increment;

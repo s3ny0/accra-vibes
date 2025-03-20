@@ -19,26 +19,23 @@ nav{
 .drop-down-button:hover{cursor: url("cursors/cursor-finger.png"), auto;}
 
 .drop-down-menu{
-    background-color: #b41414;
+    background-color: #d32626;
     z-index: 20;
     display: none;
 }
 .drop-down-menu h1:hover{
     color: white;
 }
-.design-element{
-    border-top: 1px solid black;
-}
 
 .landing{
-    background-image: url('images/sanbox_via_x.jpg');
+    background-image: url('images/sandbox-2_courtesy_sandbox_via_x.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
 }
 #page-title{
     margin: 0px;
-    color: #153a58;
+    color: #ffffff;
     text-align: center;
 }
 .arrow-button{
@@ -49,7 +46,7 @@ nav{
 
 .intro{
     display: flex;
-    background-color: #b41414;
+    background-color: #d32626;
 }
 .intro-feature{
     display: flex;

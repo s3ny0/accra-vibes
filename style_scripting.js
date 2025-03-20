@@ -7,10 +7,10 @@ window.addEventListener("DOMContentLoaded", function () {
         let baseWidth = 200; // starting viewport width - 200px
         let increment;
         
-        if (window.innerWidth >= 1100) {
+        if (window.innerWidth >= 1200) {
             increment = 0.5;
         } else if (window.innerWidth >= 700) {
-            increment = 0.5;
+            increment = 0.3;
         } else {
             increment = 1.4;
         }

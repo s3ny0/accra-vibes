@@ -25,23 +25,26 @@
     .drop-down-menu{
         height: 80%; width: 85vw;
         position: fixed;
-        top: 70px; left: 50%; transform: translateX(-50%);
+        top: 100px; left: 50%; transform: translateX(-50%);
         padding: 0px 5vw;
     }
     .drop-down-header{
-        height: 10%; width: 100%;
-        margin-bottom: 50px;
+        height: 60%; width: 100%;
+        margin-bottom: 50px; padding-top: 10%;
         border-bottom: 1px solid black;
     }
     .drop-down-menu h1{
         margin: 0px;
-        font-size: 3rem;
-        border-bottom: 1px solid black;
+        font-size: 2.2rem;
     }
     .drop-down-menu h1:hover{
         cursor: url("cursors/cursor-finger.png"), auto;
         transition: 0.5s ease;
-        border-left: 50px solid black;
+        border-left: 20px solid #800c0c; padding-left: 10px;
+    }
+    .design-element{height: 20%;}
+    .design-element img{
+        height: 60px; width: 60px;
     }
 
 
@@ -122,15 +125,20 @@
         font-size: 7rem; 
         margin: 20px 0px;
     }
-    .history-image-feature{
+    .paragraph-section{margin: 20px auto;}
+    .paragraph-images{
         width: 100%;
-        margin: 50px 0px;
-        display: flex; flex-direction: column; align-items: center; justify-content: space-evenly;
+        display: flex;
+        margin: 50px auto;
     }
-    .history-image-feature img{
-        height: 200px; width: 90%;
-        margin: 10px auto;
+    .paragraph-image{
+        width: 30%;
+        margin-right: 5px;
     }
+    .paragraph-image img{
+        height: 100px; width: 100%;
+    }
+    
     .history-conclusion{
         width: 90%;
         margin: 50px 0px;
@@ -169,24 +177,21 @@
         font-size: 7rem;
         margin: 0px;
     }
-    
-    .breaker-image{
-        height: 500px;
-        width: 100vw;
-    }
+
+    .breaker-image{height: 500px; width: 100vw;}
 
     /*about-section*/
-    .about-intro{height: 100%;width: 600px;}
+    .about-intro{height: 100%; width: 100vw;}
     .about-intro{
         width: 100vw;
     }
     .about-intro .intro-feature{
         width: 90vw;
-        margin: 0px auto;
-        padding-bottom: 20px;
+        margin: 0px auto; padding-bottom: 20px;
         flex-direction: column; align-items: center;
         border: none;
     }
+    .about-intro .number{margin-top: -100px; margin-bottom: 50px;}
     .about-section{
         width: 100vw;
         display: flex; flex-wrap: wrap-reverse; align-items: center;
@@ -200,10 +205,11 @@
     .about-section img{
         height: 200px; width: 100%;
     }
-    .contributors{margin: 50px auto;}
+    .contributors{margin: 200px auto 0px;}
     .contributors h2{
         font-size: 4rem;
     }
+    .contributor img{height: 150px; width: 150px;}
     .emphasis{
         width: 90%;
         margin: 0px auto;

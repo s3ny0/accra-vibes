@@ -29,9 +29,9 @@ body{
     }
 
     .intro{display: flex; align-items: center;}
-    .intro-feature h2, .contributors h2{font-size: 5rem; margin: 20px 0px 0px;}
-    .number{font-size: 28rem;}
-    .intro-text h2, .history-main h2, .explore-section-description h2, .emphasis{font-size: 9rem; margin: 0px;}
+    .intro-feature h2, .contributors h2{font-size: 4rem; margin: 20px 0px 0px; word-wrap: break-word; overflow-wrap: break-word;}
+    .number{font-size: 20rem; word-wrap: break-word; overflow-wrap: break-word;}
+    .intro-text h2, .history-main h2, .explore-section-description h2, .emphasis{font-size: 6rem; margin: 0px; word-wrap: break-word; overflow-wrap: break-word;}
 
     .history-main{overflow: hidden;}
 
@@ -84,7 +84,7 @@ body{
     }
     .drop-down-menu h1{
         margin: 0px;
-        font-size: 5.5rem;
+        font-size: 4rem;
     }
     .drop-down-menu h1:hover{
         cursor: url("cursors/cursor-finger.png"), auto;
@@ -217,7 +217,7 @@ body{
         height: 80vh;
         border: none;
     }
-    .about-intro .number{margin-top: -200px; font-size: 25rem;}
+    .about-intro .number{margin-top: -200px; font-size: 18rem;}
     .about-section{
         height: 100vh;
         padding: 0px 0px 0px 50px;
@@ -291,7 +291,7 @@ body{
     }
     .drop-down-menu h1{
         margin: 0px;
-        font-size: 5.5rem;
+        font-size: 4rem;
     }
     .drop-down-menu h1:hover{
         cursor: url("cursors/cursor-finger.png"), auto;
@@ -428,7 +428,7 @@ body{
         height: 100%;
     }
     .about-intro .intro-feature{border: none;}
-    .about-intro .number{margin-top: -100px;}
+    .about-intro .number{margin-top: -100px; font-size: 18rem;}
     .about-section{
         height: 100vh;
         padding: 0px 0px 0px 50px;
@@ -524,7 +524,7 @@ body{
     }
     .landing-container h1{
         margin: 0px;
-        font-size: 12rem;
+        font-size: 8rem;
         color: white;
     }
     .blurb{
@@ -642,7 +642,7 @@ body{
         padding: 50px 0px;
     }
     .about-section h2{
-        font-size: 4rem;
+        font-size: 3rem;
         color: #525252;
     }
     .about-info{

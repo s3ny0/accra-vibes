@@ -6,10 +6,10 @@
 
 body{margin: 0px;}
 *{cursor: url("cursors/location-arrow.png"), auto; scroll-behavior: smooth;}
-h2{font-family: "BearPaw";}
-h1{font-family: "Archistico";}
-p{font-family: "Capsuula"; font-size: 1.3rem;}
-.intro-feature h2, .contributors h2{font-family: "Capsuula";}
+h2{font-family: "BearPaw"; word-wrap: break-word; overflow-wrap: break-word;}
+h1{font-family: "Archistico"; word-wrap: break-word; overflow-wrap: break-word;}
+p{font-family: "Capsuula"; font-size: 1.1rem; word-wrap: break-word; overflow-wrap: break-word;}
+.intro-feature h2, .contributors h2{font-family: "Capsuula"; word-wrap: break-word; overflow-wrap: break-word;}
 img{object-fit: cover;}
 
 nav{
